@@ -1,0 +1,26 @@
+{
+    "name": "appveyor-repro",
+    "version": "0.0.1",
+    "main": "index.js",
+    "description": "",
+    "scripts": {
+        "clean": "rimraf dist/**/* && rimraf tests/simple/coverage/**/*",
+        "test": "node scripts/tests.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/igmat/appveyor-repro.git"
+    },
+    "author": "Ihor Chulina <ichulinda@gamil.com> (https://github.com/igmat)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/igmat/appveyor-repro/issues"
+    },
+    "homepage": "https://github.com/igmat/appveyor-repro",
+    "dependencies": {},
+    "devDependencies": {
+        "jest": "latest",
+        "cross-spawn-with-kill": "latest",
+        "cross-spawn": "latest"
+    }
+}
