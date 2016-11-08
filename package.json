@@ -22,5 +22,8 @@
         "jest": "latest",
         "cross-spawn-with-kill": "latest",
         "cross-spawn": "latest"
+    },
+    "jest": {
+        "testRegex": "/tests/.*\\.(spec)\\.(ts|js)$"
     }
 }

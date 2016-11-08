@@ -14,8 +14,8 @@ function runInfiniteProcess() {
     });
     var getStderrAsync = function() {
         return new Promise(function(resolve) {
-            let stderr = '';
-            let listener = function(data) {
+            var stderr = '';
+            var listener = function(data) {
                 stderr += data.toString();
                 if (data.toString().includes('error #')) {
                     resolve(stderr);
@@ -29,7 +29,7 @@ function runInfiniteProcess() {
     return { childProcess, getStderrAsync };
 }
 
-describe('repro', function() {
+describe('simple-repro', function() {
     var result;
 
     beforeAll(function() {
